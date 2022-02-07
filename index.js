@@ -1,1 +1,1 @@
-alert("Amit lodu")
+alert("Amit chodu")
