@@ -9,10 +9,22 @@ for(i=0;i<size;i++)
     })
 }
 
+function animate(key)
+{
+    var obj = document.querySelector("."+key);
+    obj.classList.add("pressed");
+    setTimeout(function (){
+        obj.classList.remove("pressed")
+    }, 100);
+
+    
+}
+
 document.addEventListener("keypress", function(event)
 {
     // alert(event.key);
     makeSound(event.key);
+    animate(event.key);
 })
 
 
